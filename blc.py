@@ -5,6 +5,14 @@ e : 00 e   (Lam)
   | 01 e e (App)
   | [1] 0  (Var)
 
+Var encodes DeBruijn indices with
+
+0 = 10
+1 = 110
+2 = 1110
+3 = 11110
+...
+
 Closure : TE Term Env
         | IDX Int
 
